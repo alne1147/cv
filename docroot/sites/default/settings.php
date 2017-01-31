@@ -285,7 +285,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'GI8HXkOrjmr3gBaoQJVw33c0CNNB6ya1yJllJy3bFy-M80tPNK9RX9HwFdp_kTlBGlk1mF09_g';
+$settings['hash_salt'] = 'GtNHViobQUq7SJCYUdjcVOGAlYNrdNVvV7n68X_fk0NLfz7oXamsxtBgH3rOJCVSSyb6_VfRRw';
 
 /**
  * Deployment identifier.
@@ -739,6 +739,18 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components',
 ];
 
+$databases['default']['default'] = array (
+  'database' => 'cv_athena_server',
+  'username' => 'admin_11523',
+  'password' => 'Password1',
+  'host' => 'mysql.athena-server.com',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'lightning';
+$config_directories['sync'] = 'sites/default/files/config_wkwqBME-VGjQ9I7SIEJhg7uYSpAQ30aBISj-bTPbq1373KwLInB_B4TZcALWnUwg-nyFga7B4w/sync';
+
 /**
  * Load local development override configuration, if available.
  *
@@ -749,19 +761,7 @@ $settings['file_scan_ignore_directories'] = [
  *
  * Keep this code block at the end of this file to take full effect.
  */
-#
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
-$databases['default']['default'] = array (
-  'database' => 'cv',
-  'username' => 'root',
-  'password' => 'root',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$settings['install_profile'] = 'lightning';
-$config_directories['sync'] = 'sites/default/files/config_Ml1jh3OMcILnFs23etSmaeh4CV1OV62UJionNZUkID9QDev88FQgXGNODE7VGp_R7irWhZrUHw/sync';
+
+ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+   include $app_root . '/' . $site_path . '/settings.local.php';
+ }
