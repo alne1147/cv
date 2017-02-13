@@ -56,6 +56,9 @@
  * @see html.html.twig
  */
 #}
+
+{{ attach_library('kam/grand-sticky') }}
+
 {% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 {# Navbar #}
 {% if page.navigation or page.navigation_collapsible %}

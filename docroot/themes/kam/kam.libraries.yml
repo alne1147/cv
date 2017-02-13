@@ -2,6 +2,9 @@ global-styling:
   css:
     theme:
       css/style.css: {}
+  version: 1.0.0
+  js:
+    theme/js/kam.js: {}
 
 bootstrap-scripts:
   js:
@@ -26,3 +29,11 @@ fonts:
     theme:
       //fonts.googleapis.com/css?family=Oxygen:300: { type: external }
       css/myStyles.css: {}
+
+
+grand-sticky:
+  version: 1.0.4
+  js:
+    vendor/grand-sticky/jquery.sticky.js: {}
+  dependencies:
+    - core/jquery
