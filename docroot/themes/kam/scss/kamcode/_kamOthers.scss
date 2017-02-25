@@ -1,0 +1,35 @@
+body {
+
+   background-image: url("../images/park.png");
+   background-size: 100% 100%;
+  background-color: transparent;
+  
+}
+.main-container
+{
+	background-color:white;
+	box-shadow: 1px 1px 5px #888888;
+}
+
+#block-readthelatestissue
+{
+	box-shadow: 1px 1px 5px #888888;
+	background-color:#3c3f41;
+	padding:10px;
+}
+
+
+.block h2
+{
+	border:5px solid #a685bd;
+	padding:10px;
+	background: #9d82b2;
+	color:white;
+	font-size:16px;
+	font-weight: 200;
+}
+
+.view-slideshow  .views-field-title h2
+{
+	font-size:24px;
+}
