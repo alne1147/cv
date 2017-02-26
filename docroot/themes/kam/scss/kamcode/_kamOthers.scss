@@ -9,6 +9,7 @@ body {
 {
 	background-color:white;
 	box-shadow: 1px 1px 5px #888888;
+	padding-bottom: 20px;
 }
 
 #block-readthelatestissue
@@ -32,4 +33,17 @@ body {
 .view-slideshow  .views-field-title h2
 {
 	font-size:24px;
+}
+
+#edit-name, #edit-mail, #edit-field-phone-number-0-value
+{
+	width:300px;
+}
+#edit-field-attachement-0-upload-button
+{
+margin:20px;
+}
+.form-control
+{
+	height:auto;
 }
