@@ -3,7 +3,7 @@ body {
    background-image: url("../images/park.png");
    background-size: 100% 100%;
   background-color: transparent;
-  
+
 }
 .main-container
 {
@@ -46,4 +46,8 @@ margin:20px;
 .form-control
 {
 	height:auto;
+}
+#block-searchform
+{
+  margin-top:80px;
 }
