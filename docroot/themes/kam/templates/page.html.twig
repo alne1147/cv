@@ -184,6 +184,7 @@
 {% if page.footer %}
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
+      <img src="{{ directory }}/images/bottomlogo.png" alt="footer logo" {{ attributes.addClass(['pull-right']) }} />
       {{ page.footer }}
     </footer>
   {% endblock %}
