@@ -9,7 +9,8 @@ body {
 {
 	background-color:white;
 	box-shadow: 1px 1px 5px #888888;
-	padding-bottom: 20px;
+	padding-bottom: 40px;
+  border-bottom: 10px solid #432e84;
 }
 
 #block-readthelatestissue
@@ -50,4 +51,11 @@ margin:20px;
 #block-searchform
 {
   margin-top:80px;
+}
+body.page-node-type-column article img{
+  margin:0px 15px 15px 0px;
+  border-bottom: 5px solid #432e84;
+  border-right: 5px solid #9d82b2;
+  border-left: 3px solid #432e84;
+  border-top: 3px solid #9d82b2;
 }

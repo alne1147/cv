@@ -9,16 +9,16 @@
     "packages": [
         {
             "name": "acquia/lightning",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/acquia/lightning.git",
-                "reference": "63ce3b2b23138a25a280d34c2a240b83ed288fba"
+                "reference": "31b5c5ec455bdf234c85ea04f4fded57fd1d44e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/acquia/lightning/zipball/63ce3b2b23138a25a280d34c2a240b83ed288fba",
-                "reference": "63ce3b2b23138a25a280d34c2a240b83ed288fba",
+                "url": "https://api.github.com/repos/acquia/lightning/zipball/31b5c5ec455bdf234c85ea04f4fded57fd1d44e1",
+                "reference": "31b5c5ec455bdf234c85ea04f4fded57fd1d44e1",
                 "shasum": ""
             },
             "require": {
@@ -46,8 +46,8 @@
                 "drupal/metatag": "^1.0",
                 "drupal/multiversion": "1.0.0-alpha12",
                 "drupal/page_manager": "1.0.0-alpha24",
-                "drupal/panelizer": "3.0.0-alpha3",
-                "drupal/panels": "3.0.0-beta5",
+                "drupal/panelizer": "3.0.0-beta1",
+                "drupal/panels": "3.0.0-beta6",
                 "drupal/pathauto": "^1.0",
                 "drupal/replication": "1.0.0-alpha5",
                 "drupal/scheduled_updates": "1.0.0-alpha5",
@@ -63,11 +63,13 @@
                 "behat/mink": "~1.7",
                 "behat/mink-goutte-driver": "~1.2",
                 "drupal-composer/drupal-scaffold": "^2.0.0",
-                "drupal/coder": "8.*",
+                "drupal/coder": "^2.0",
                 "drupal/devel": "^1.0",
                 "drupal/drupal-extension": "^3.2",
                 "drush/drush": "^8.0",
+                "jakoch/phantomjs-installer": "1.9.8",
                 "jcalderonzumba/gastonjs": "~1.0.2",
+                "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
                 "mikey179/vfsstream": "~1.2",
                 "phing/phing": "^2.14",
                 "phpunit/phpunit": "~4.8",
@@ -90,11 +92,10 @@
                 },
                 "patches": {
                     "drupal/panelizer": {
-                        "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch",
-                        "2664574 - Add support for Taxonomy Term entities": "https://www.drupal.org/files/issues/2664574-26.patch"
+                        "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
                     },
                     "drupal/panels": {
-                        "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-9.patch"
+                        "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-13.patch"
                     },
                     "drupal/scheduled_updates": {
                         "2674874 - Issue saving Schedule Update Type form": "https://www.drupal.org/files/issues/schedule_updates-save_type-2674874-2.patch",
@@ -102,7 +103,8 @@
                     },
                     "drupal/workbench_moderation": {
                         "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch",
-                        "2847078 - Revision tracker's dynamic table creation can break Views": "https://www.drupal.org/files/issues/2847078-6.patch"
+                        "2847078 - Revision tracker's dynamic table creation can break Views": "https://www.drupal.org/files/issues/2847078-6.patch",
+                        "2749503 - Add basic support for Quick Edit": "https://www.drupal.org/files/issues/workbench_moderation-quickedit-support-2749503-6.patch"
                     },
                     "drupal/multiversion": {
                         "2822915 - Migration source plugin makes bad assumptions that can lead to data loss": "https://www.drupal.org/files/issues/2822915-2.patch",
@@ -114,7 +116,7 @@
                         "2820105 - User references are not replicated": "https://www.drupal.org/files/issues/2820105-10.patch"
                     },
                     "drupal/core": {
-                        "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138-28.patch",
+                        "2652138 - ImageFormatter does not support SVGs": "https://www.drupal.org/files/issues/2652138.patch",
                         "2765525 - Add AJAX command to add style sheets to CKEditor instances": "https://www.drupal.org/files/issues/2765525-30-8.2.x.patch"
                     },
                     "drupal/entity_embed": {
@@ -136,7 +138,7 @@
                 "GPL-2.0+"
             ],
             "description": "The best of Drupal, curated by Acquia",
-            "time": "2017-02-01 20:07:28"
+            "time": "2017-03-09 21:00:15"
         },
         {
             "name": "asm89/stack-cors",
@@ -2655,17 +2657,17 @@
         },
         {
             "name": "drupal/panelizer",
-            "version": "3.0.0-alpha3",
+            "version": "3.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/panelizer",
-                "reference": "8.x-3.0-alpha3"
+                "reference": "8.x-3.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-3.0-alpha3.zip",
+                "url": "https://ftp.drupal.org/files/projects/panelizer-8.x-3.0-beta1.zip",
                 "reference": null,
-                "shasum": "f862ae14f47cb486cd4719242763064e7d6ac387"
+                "shasum": "1a61865b5e8ad1b28b2dbcdb1bafc7caf02c1fa2"
             },
             "require": {
                 "drupal/core": "*",
@@ -2679,8 +2681,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha3",
-                    "datestamp": "1481832184"
+                    "version": "8.x-3.0-beta1",
+                    "datestamp": "1486220583"
                 },
                 "patches_applied": {
                     "2793841 - Properly integrate with Panels IPE": "https://www.drupal.org/files/issues/panelizer-panels-ipe-tempstore-id.patch"
@@ -2724,17 +2726,17 @@
         },
         {
             "name": "drupal/panels",
-            "version": "3.0.0-beta5",
+            "version": "3.0.0-beta6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/panels",
-                "reference": "8.x-3.0-beta5"
+                "reference": "8.x-3.0-beta6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/panels-8.x-3.0-beta5.zip",
+                "url": "https://ftp.drupal.org/files/projects/panels-8.x-3.0-beta6.zip",
                 "reference": null,
-                "shasum": "3f62240b59b503902f349f2667a65c668d1e3fb2"
+                "shasum": "44b59e5009d16d1d1b17907cd3305f488c22a757"
             },
             "require": {
                 "drupal/core": "~8.0",
@@ -2742,7 +2744,8 @@
                 "drupal/layout_plugin": ">=1.0.0-alpha22"
             },
             "require-dev": {
-                "drupal/page_manager": "*"
+                "drupal/page_manager": "*",
+                "drupal/panelizer": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -2750,11 +2753,11 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5",
-                    "datestamp": "1475335394"
+                    "version": "8.x-3.0-beta6",
+                    "datestamp": "1488057783"
                 },
                 "patches_applied": {
-                    "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-9.patch"
+                    "2793801 - Allow modules to influence the IPE tempstore ID": "https://www.drupal.org/files/issues/2793801-13.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2809,7 +2812,7 @@
         },
         {
             "name": "drupal/panels_ipe",
-            "version": "3.0.0-beta5",
+            "version": "3.0.0-beta6",
             "require": {
                 "drupal/core": "*",
                 "drupal/panels": "self.version"
@@ -2820,8 +2823,8 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-beta5",
-                    "datestamp": "1475335394"
+                    "version": "8.x-3.0-beta6",
+                    "datestamp": "1488057783"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3551,16 +3554,16 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.9.1",
+            "version": "v4.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "de82f9845f2a0f9f27abec67d6a4958427e6f5d6"
+                "reference": "6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/de82f9845f2a0f9f27abec67d6a4958427e6f5d6",
-                "reference": "de82f9845f2a0f9f27abec67d6a4958427e6f5d6",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4",
+                "reference": "6d50e5282afdfdfc3e0ff6d192aff56c5629b3d4",
                 "shasum": ""
             },
             "require": {
@@ -3594,7 +3597,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2017-03-08 08:22:36"
+            "time": "2017-03-13 06:30:53"
         },
         {
             "name": "graphp/algorithms",
@@ -4020,16 +4023,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v2.0.9",
+            "version": "v2.0.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "6968531206671f94377b01dc7888d5d1b858a01b"
+                "reference": "634bae8e911eefa89c1abfbf1b66da679ac8f54d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/6968531206671f94377b01dc7888d5d1b858a01b",
-                "reference": "6968531206671f94377b01dc7888d5d1b858a01b",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/634bae8e911eefa89c1abfbf1b66da679ac8f54d",
+                "reference": "634bae8e911eefa89c1abfbf1b66da679ac8f54d",
                 "shasum": ""
             },
             "require": {
@@ -4064,7 +4067,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2017-03-03 20:43:42"
+            "time": "2017-03-13 16:27:32"
         },
         {
             "name": "php-instagram-api/php-instagram-api",
@@ -7762,16 +7765,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v3.2.4",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "394a2475a3a89089353fde5714a7f402fbb83880"
+                "reference": "2fe0caa60c1a1dfeefd0425741182687a9b382b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/394a2475a3a89089353fde5714a7f402fbb83880",
-                "reference": "394a2475a3a89089353fde5714a7f402fbb83880",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/2fe0caa60c1a1dfeefd0425741182687a9b382b8",
+                "reference": "2fe0caa60c1a1dfeefd0425741182687a9b382b8",
                 "shasum": ""
             },
             "require": {
@@ -7815,20 +7818,20 @@
             ],
             "description": "Symfony BrowserKit Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-31 21:49:23"
+            "time": "2017-02-21 09:12:04"
         },
         {
             "name": "symfony/config",
-            "version": "v3.2.4",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "9f99453e77771e629af8a25eeb0a6c4ed1e19da2"
+                "reference": "741d6d4cd1414d67d48eb71aba6072b46ba740c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/9f99453e77771e629af8a25eeb0a6c4ed1e19da2",
-                "reference": "9f99453e77771e629af8a25eeb0a6c4ed1e19da2",
+                "url": "https://api.github.com/repos/symfony/config/zipball/741d6d4cd1414d67d48eb71aba6072b46ba740c2",
+                "reference": "741d6d4cd1414d67d48eb71aba6072b46ba740c2",
                 "shasum": ""
             },
             "require": {
@@ -7871,7 +7874,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2017-02-14 16:27:43"
+            "time": "2017-03-01 18:18:25"
         },
         {
             "name": "symfony/css-selector",
@@ -7928,16 +7931,16 @@
         },
         {
             "name": "symfony/dom-crawler",
-            "version": "v3.2.4",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "b814b41373fc4e535aff8c765abe39545216f391"
+                "reference": "403944e294cf4ceb3b8447f54cbad88ea7b99cee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/b814b41373fc4e535aff8c765abe39545216f391",
-                "reference": "b814b41373fc4e535aff8c765abe39545216f391",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/403944e294cf4ceb3b8447f54cbad88ea7b99cee",
+                "reference": "403944e294cf4ceb3b8447f54cbad88ea7b99cee",
                 "shasum": ""
             },
             "require": {
@@ -7980,20 +7983,20 @@
             ],
             "description": "Symfony DomCrawler Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-21 17:14:11"
+            "time": "2017-02-21 09:12:04"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.2.4",
+            "version": "v3.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "a0c6ef2dc78d33b58d91d3a49f49797a184d06f4"
+                "reference": "bc0f17bed914df2cceb989972c3b996043c4da4a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/a0c6ef2dc78d33b58d91d3a49f49797a184d06f4",
-                "reference": "a0c6ef2dc78d33b58d91d3a49f49797a184d06f4",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/bc0f17bed914df2cceb989972c3b996043c4da4a",
+                "reference": "bc0f17bed914df2cceb989972c3b996043c4da4a",
                 "shasum": ""
             },
             "require": {
@@ -8029,7 +8032,7 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2017-01-08 20:47:33"
+            "time": "2017-03-06 19:30:27"
         },
         {
             "name": "webmozart/assert",
