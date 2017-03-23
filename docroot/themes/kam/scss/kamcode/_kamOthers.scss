@@ -5,6 +5,13 @@ body {
   background-color: transparent;
 
 }
+// #block-views-block-events-block-1 h2.block-title
+// {
+//   background-image: url("../images/calendar.png");
+//   background-repeat: no-repeat;
+//   background-position: top left;
+//   padding-left:30px;
+// }
 .main-container
 {
 	background-color:white;
@@ -20,20 +27,31 @@ body {
 	padding:10px;
 }
 
-
-.block h2
+h2
 {
-	border:5px solid #a685bd;
-	padding:10px;
-	background: #9d82b2;
-	color:white;
-	font-size:16px;
-	font-weight: 200;
+  font-size:22px;
 }
 
+.blockheader
+{
+	border:5px solid #a685bd;
+	background: #9d82b2;
+	color:white;
+  margin-top:20px;
+  margin-bottom:10px;
+  padding:10px;
+}
+.blockheader h2
+{
+  margin:0px;
+  padding:0px;
+}
 .view-slideshow  .views-field-title h2
 {
-	font-size:24px;
+	font-size:28px;
+  border:0px solid #a685bd;
+  background: #fff;
+  color:black;
 }
 
 #edit-name, #edit-mail, #edit-field-phone-number-0-value
@@ -52,10 +70,29 @@ margin:20px;
 {
   margin-top:80px;
 }
+.view-column-block .field--name-field-image img,
 body.page-node-type-column article img{
-  margin:0px 15px 15px 0px;
   border-bottom: 5px solid #432e84;
   border-right: 5px solid #9d82b2;
   border-left: 3px solid #432e84;
   border-top: 3px solid #9d82b2;
+}
+.view-events ul li
+{
+  border-bottom:1px solid #454545;
+  padding-bottom:10px;
+}
+#block-views-block-latest-articles-block-1 .views-row
+{
+  border-bottom:1px solid #454545;
+  padding-bottom:10px;
+  padding-top:10px; 
+}
+.glyphicon-calendar
+{
+  font-size:20px;
+}
+.field--name-field-featured-image
+{
+  padding: 0 10px 10px 0;
 }
