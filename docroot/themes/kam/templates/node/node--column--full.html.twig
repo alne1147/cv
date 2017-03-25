@@ -85,14 +85,13 @@
   {% endif %}
   {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer>
-    
-    </footer>
-  {% endif %}
+  <div{{ content_attributes.addClass('content') }}>
+  <div class="col-md-12">
+   <div class="pull-left col-md-2">  {{ content.field_image }}</div>
+   <div>{{ content.body }}</div>
+</div>
 
-  <div{{ content_attributes.addClass('content row') }}>
-    {{ content }}
+
   </div>
 
 </article>
