@@ -181,11 +181,10 @@
   </div>
 {% endblock %}
 
-{% if page.footer %}
+
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
-      <img src="{{ directory }}/images/bottomlogo.png" alt="footer logo" {{ attributes.addClass(['pull-right']) }} />
+      <img src="/{{ directory }}/images/bottomlogo.png" alt="footer logo" {{ attributes.addClass(['col-md-3 col-md-offset-4']) }} />
       {{ page.footer }}
     </footer>
   {% endblock %}
-{% endif %}
