@@ -56,9 +56,11 @@
 <section{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
-<div class="col-md-12">  <div class="blockheader row"><div class="glyphicon glyphicon-calendar col-md-3"></div>  <h2{{ title_attributes.addClass('block-title col-md-8') }}>{{ label }}</h2></div></div>
+  <div class="col-md-12">  <div class="blockheader row"><div class="glyphicon glyphicon-pencil col-md-3"></div>  <h2{{ title_attributes.addClass('block-title col-md-8') }}>{{ label }}</h2></div></div>
+
   {% endif %}
   {{ title_suffix }}
+
   {% block content %}
     {{ content }}
   {% endblock %}
