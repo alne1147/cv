@@ -109,7 +109,9 @@
       {% if page.header %}
         {% block header %}
           <div class="col-sm-12 banner" role="heading">
+            <img src="/{{ directory }}/images/logo.png" alt="footer logo" {{ attributes.addClass(['col-md-5 site-logo']) }} />
             {{ page.header }}
+            {{ page.footer }}
           </div>
         {% endblock %}
       {% endif %}
