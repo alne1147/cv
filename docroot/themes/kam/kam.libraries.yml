@@ -4,7 +4,7 @@ global-styling:
       css/style.css: {}
   version: 1.0.0
   js:
-    theme/js/kam.js: {}
+    js/kam.js: {}
 
 bootstrap-scripts:
   js:

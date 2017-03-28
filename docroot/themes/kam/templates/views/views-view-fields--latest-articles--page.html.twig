@@ -31,10 +31,6 @@
  * @ingroup themeable
  */
 #}
-<h2></h2>
-
-
-
 
 
 <div class="container-fluid">
@@ -53,16 +49,17 @@
         <div class="col-md-9">
           {{ fields.body.content }}
           <div class"row">
-            <a href="{{ url }}" rel="bookmark" class="btn btn-primary btn-large">Read More</a>
+          {{ fields.view_node.content }}
         </div>
     </div>
         {% else %}
 
         <div class="col-md-12">
           {{ fields.body.content }}
-          <div class"row">
-            <a href="{{ url }}" rel="bookmark" class="btn btn-primary btn-large">Read More</a>
-        </div>
+            <div class"row">
+            {{ fields.view_node.content }}
+          </div>
+
     </div>
   {% endif %}
 

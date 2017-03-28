@@ -5,6 +5,12 @@ body {
   background-color: transparent;
 
 }
+.block h2{
+
+    font-style: normal;
+    color: #fff;
+}
+
 // #block-views-block-events-block-1 h2.block-title
 // {
 //   background-image: url("../images/calendar.png");
@@ -110,4 +116,10 @@ body.page-node-type-column article img{
 .field--name-field-featured-image
 {
   padding: 0 10px 10px 0;
+}
+.view-slideshow h2.field-content
+{
+  border-bottom:5px solid #788793;
+  padding-bottom:5px;
+  margin-bottom:5px;
 }
