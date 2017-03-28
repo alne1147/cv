@@ -109,9 +109,9 @@
       {% if page.header %}
         {% block header %}
           <div class="col-sm-12 banner" role="heading">
-            <img src="/{{ directory }}/images/logo.png" alt="footer logo" {{ attributes.addClass(['col-md-5 site-logo']) }} />
+            <img src="http://www.cvsite.athena-server.com/cv/docroot/themes/kam/images/logo.png" alt="logo" {{ attributes.addClass(['col-md-5']) }} />
             {{ page.header }}
-            {{ page.footer }}
+
           </div>
         {% endblock %}
       {% endif %}
@@ -186,7 +186,6 @@
 
   {% block footer %}
     <footer class="footer {{ container }}" role="contentinfo">
-      <img src="/{{ directory }}/images/bottomlogo.png" alt="footer logo" {{ attributes.addClass(['col-md-3 col-md-offset-4']) }} />
       {{ page.footer }}
     </footer>
   {% endblock %}
