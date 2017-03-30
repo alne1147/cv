@@ -27,7 +27,7 @@ fonts:
     url: http://scripts.sil.org/cms/scripts/page.php?site_id=nrsi&id=OFL
   css:
     theme:
-      //fonts.googleapis.com/css?family=Oxygen:300: { type: external }
+      //fonts.googleapis.com/css?family=Oxygen:400: { type: external }
       css/myStyles.css: {}
 
 
