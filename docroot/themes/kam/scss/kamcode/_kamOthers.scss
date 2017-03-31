@@ -30,7 +30,10 @@ p {
 	padding-bottom: 40px;
   border-bottom: 10px solid #432e84;
 }
-
+.alert-danger
+{
+  display:none;
+}
 #block-readthelatestissue
 {
 	box-shadow: 1px 1px 5px #888888;
@@ -91,7 +94,7 @@ body.page-node-type-column article img{
   color:white;
   padding:15px;
 }
-.view-events ul li
+#block-views-block-events-block-1 .view-events ul li
 {
   border-bottom:1px solid #454545;
   padding-bottom:10px;
@@ -142,4 +145,29 @@ body.page-node-type-column article img{
 .block
 {
   line-height:20px;
+}
+.views-field-field-date
+{
+  font-weight:bold;
+}
+.view-events .views-field-body
+{
+  padding-bottom:20px;
+}
+.view-latest-articles .views-row {
+  padding:10px 0 15px 0;
+}
+.view-latest-articles h2
+{
+  border-bottom:2px solid #000;
+  padding-bottom:10px;
+  margin-bottom:10px;
+}
+
+.view-latest-articles h3
+{
+  border-bottom: 2px solid #a6b292;
+  padding:10px;
+  background-color:#6c755e;
+  color:white;
 }
